@@ -70,5 +70,12 @@
             android:onClick="customDialog"
             android:text="@string/button_custom_layout_dialog"/>
 
+        <Button
+            android:id="@+id/button_date_picker_dialog"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:onClick="datePickerDialog"
+            android:text="@string/button_date_picker_dialog"/>
+
     </LinearLayout>
 </ScrollView>

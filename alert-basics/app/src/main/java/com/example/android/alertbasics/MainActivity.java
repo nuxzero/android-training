@@ -1,5 +1,6 @@
 package com.example.android.alertbasics;
 
+import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -11,8 +12,11 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -155,5 +159,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         dialog.show();
+    }
+
+    public void datePickerDialog(View view) {
+        // TODO Date Picker Dialog here
+        Calendar calender = Calendar.getInstance();
+        DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+
+                Toast.makeText(MainActivity.this, dayOfMonth+"/"+monthOfYear+"/"+year, Toast.LENGTH_SHORT).show();
+
+            }
+        }, calender.get(Calendar.YEAR), calender.get(Calendar.MONTH), calender.get(Calendar.DAY_OF_MONTH));
+        datePickerDialog.setTitle("Date Picker");
+
+        datePickerDialog.show();
     }
 }

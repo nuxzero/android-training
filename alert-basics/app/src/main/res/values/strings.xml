@@ -14,5 +14,6 @@
     <string name="button_simple_toast">Simple Toast</string>
     <string name="button_position_toast">Position Toast</string>
     <string name="button_custom_toast">Custom Toast</string>
+    <string name="button_date_picker_dialog">Date Picker</string>
 
 </resources>
