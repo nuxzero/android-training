@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/button_send"/>
+
+    <EditText
+        android:id="@+id/edit_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/button_send"
+        android:hint="@string/edit_message"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textView"
+        android:layout_marginTop="32dp"
+        android:textColor="#000"
+        android:textSize="32sp"
+        android:layout_below="@+id/button_send"
+        android:layout_centerHorizontal="true"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you student?"
+        android:id="@+id/checkbox_student"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkbox_student"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:id="@+id/radio_male" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:id="@+id/radio_female" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+
+</RelativeLayout>
