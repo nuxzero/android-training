@@ -1,17 +1,17 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:id="@+id/layout">
+    android:id="@+id/layout"
+    tools:context=".MainActivity">
 
     <TextView android:id="@+id/text_a"
-        android:text="@string/message_a" android:layout_width="match_parent"
-        android:layout_height="240dp"
+        android:text="@string/message_a"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
         android:textColor="#fff"
         android:background="#4583ff"
         android:textSize="32sp"
-        android:gravity="center"
-        android:layout_centerHorizontal="true"/>
+        android:gravity="center"/>
 
     <TextView android:id="@+id/text_b"
         android:text="@string/message_b"
@@ -21,7 +21,6 @@
         android:background="#ff767e"
         android:textSize="32sp"
         android:gravity="center"
-        android:layout_below="@+id/text_a"
-        android:layout_centerHorizontal="true"/>
+        android:layout_toRightOf="@+id/text_a"/>
 
 </RelativeLayout>
