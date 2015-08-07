@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class MessageActivity extends AppCompatActivity {
 
@@ -11,6 +12,11 @@ public class MessageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message);
+
+        // TODO Here
+        String message = getIntent().getStringExtra("message");
+        TextView messageText = (TextView) findViewById(R.id.text_message);
+        messageText.setText(message);
     }
 
     @Override
