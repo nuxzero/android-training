@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/Nux/Documents/Developments/cafecode/android-training/FragmentBasics/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="/Users/Nux/Documents/Developments/cafecode/android-training/FragmentBasics/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-5a5d33acfb10e3cd589efda3758c13ba5b0f2dde.jar" />
+    </item>
+    <item
+        jar="/Users/Nux/Documents/Developments/cafecode/android-training/FragmentBasics/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="/Users/Nux/Documents/Developments/cafecode/android-training/FragmentBasics/app/build/intermediates/pre-dexed/debug/classes-53c30f3a41e65fd8921badd428109a37758408cb.jar" />
+    </item>
+    <item
+        jar="/Users/Nux/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="/Users/Nux/Documents/Developments/cafecode/android-training/FragmentBasics/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-4ebb2410becb2b11aa9c4838099121eb7970ad71.jar" />
+    </item>
+
+</items>
