@@ -1,16 +1,20 @@
 package me.cafecode.simpleuserinterface;
 
+import android.content.DialogInterface;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
-public class DialogActivity extends AppCompatActivity {
+public class DialogActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dialog);
+
     }
 
     @Override
@@ -34,4 +38,51 @@ public class DialogActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public void onClick(View v) {
+
+    }
+
+    public void simpleAlertDialog(View v) {
+        // TODO... Create simple AlertDialog here
+        AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+        dialog.setTitle("Simple AlertDialog");
+        dialog.setMessage("Hello world");
+        dialog.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+        dialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+        dialog.setNeutralButton("No thanks", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+        dialog.create();
+    }
+
+    public void listAlertDialog(View v) {
+        // TODO... List dialog
+         String[] colors = {"Red", "Green", "Yellow"};
+
+        AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+        dialog.setTitle("List dialog");
+        dialog.setItems(colors, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+        dialog.create();
+    }
+
 }
