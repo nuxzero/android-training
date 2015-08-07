@@ -20,6 +20,14 @@
             android:name=".DialogActivity"
             android:label="@string/title_activity_dialog" >
         </activity>
+        <activity
+            android:name=".MessageActivity"
+            android:label="@string/title_activity_message"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="me.cafecode.simpleuserinterface.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

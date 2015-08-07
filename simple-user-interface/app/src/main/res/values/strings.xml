@@ -11,4 +11,5 @@
     <string name="button_option_dialog">Option dialog</string>
     <string name="button_list_dialog">List dialog</string>
     <string name="button_custom_layout_dialog">Custom layout</string>
+    <string name="title_activity_message">MessageActivity</string>
 </resources>
