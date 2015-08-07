@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Alert basics</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="button_simple_dialog">Simple dialog</string>
+    <string name="button_progress_dialog">Progress dialog</string>
+    <string name="button_option_dialog">Option dialog</string>
+    <string name="button_list_dialog">List dialog</string>
+    <string name="button_custom_layout_dialog">Custom layout</string>
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="button_log">Log console</string>
+    <string name="button_simple_toast">Simple Toast</string>
+    <string name="button_position_toast">Position Toast</string>
+    <string name="button_custom_toast">Custom Toast</string>
+
+</resources>
