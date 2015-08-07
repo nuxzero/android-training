@@ -17,10 +17,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DialogActivity"
-            android:label="@string/title_activity_dialog" >
-        </activity>
-        <activity
             android:name=".MessageActivity"
             android:label="@string/title_activity_message"
             android:parentActivityName=".MainActivity" >
