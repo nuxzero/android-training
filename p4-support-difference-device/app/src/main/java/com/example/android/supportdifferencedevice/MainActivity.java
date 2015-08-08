@@ -1,14 +1,9 @@
 package com.example.android.supportdifferencedevice;
 
-import android.os.Build;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.ViewGroup;
-import android.widget.RelativeLayout;
-import android.widget.TextClock;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,19 +12,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.JELLY_BEAN_MR1) {
+        // TODO Support API lower version here
 
-            TextClock textClock = new TextClock(this);
-            textClock.setTextSize(32);
-            RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-            layoutParams.addRule(RelativeLayout.CENTER_IN_PARENT, RelativeLayout.TRUE);
-            textClock.setLayoutParams(layoutParams);
-            RelativeLayout layout = (RelativeLayout) findViewById(R.id.layout);
-            layout.addView(textClock);
+        /*
+        TextClock textClock = new TextClock(this);
+        textClock.setTextSize(32);
+        RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        layoutParams.addRule(RelativeLayout.CENTER_IN_PARENT, RelativeLayout.TRUE);
+        textClock.setLayoutParams(layoutParams);
+        RelativeLayout layout = (RelativeLayout) findViewById(R.id.layout);
+        layout.addView(textClock);
+        */
 
-        } else {
-            Toast.makeText(MainActivity.this, "Device not support", Toast.LENGTH_SHORT).show();
-        }
     }
 
     @Override

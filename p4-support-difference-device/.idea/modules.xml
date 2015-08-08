@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/support-difference-device.iml" filepath="$PROJECT_DIR$/support-difference-device.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p4-support-difference-device.iml" filepath="$PROJECT_DIR$/p4-support-difference-device.iml" />
     </modules>
   </component>
 </project>
