@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <!-- TODO Toolbar here -->
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?android:attr/actionBarSize"
-        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        android:background="@color/colorPrimary"
-        app:title="Toolbar"
-        android:elevation="8dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -67,6 +57,5 @@
             android:id="@+id/button"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
-
 
 </LinearLayout>

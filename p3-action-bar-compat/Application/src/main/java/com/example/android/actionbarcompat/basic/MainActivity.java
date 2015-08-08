@@ -1,30 +1,20 @@
 package com.example.android.actionbarcompat.basic;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v4.view.MenuItemCompat;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sample_main);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayShowTitleEnabled(false);
-        actionBar.setDisplayShowCustomEnabled(true);
+        // TODO Set ToolBar into Support Action Bar
 
-        View customActionBarView = LayoutInflater.from(this).inflate(R.layout.custom_actionbar, null);
-        actionBar.setCustomView(customActionBarView);
+        // TODO Add custom view into Action Bar
 
     }
 
@@ -33,13 +23,8 @@ public class MainActivity extends AppCompatActivity {
         // Inflate our menu from the resources by using the menu inflater.
         getMenuInflater().inflate(R.menu.main, menu);
 
-        // It is also possible add items here. Use a generated id from
-        // resources (ids.xml) to ensure that all menu ids are distinct.
-        MenuItem locationItem = menu.add(0, R.id.menu_location, 0, R.string.menu_location);
-        locationItem.setIcon(R.drawable.ic_room_white_48dp);
+        // TODO Add menu item here
 
-        // Need to use MenuItemCompat methods to call any action item related methods
-        MenuItemCompat.setShowAsAction(locationItem, MenuItem.SHOW_AS_ACTION_IF_ROOM);
 
         return true;
     }

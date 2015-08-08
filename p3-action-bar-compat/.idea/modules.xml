@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Application/Application.iml" filepath="$PROJECT_DIR$/Application/Application.iml" />
-      <module fileurl="file://$PROJECT_DIR$/action-bar-compat.iml" filepath="$PROJECT_DIR$/action-bar-compat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p3-action-bar-compat.iml" filepath="$PROJECT_DIR$/p3-action-bar-compat.iml" />
     </modules>
   </component>
 </project>
