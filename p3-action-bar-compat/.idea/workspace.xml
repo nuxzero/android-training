@@ -17,14 +17,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="256e3902-df2c-4848-bc1e-5e8019d9473e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../p4-support-difference-device/p4-support-difference-device.iml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../p4-support-difference-device/app/src/main/res/layout-land/activity_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../p4-support-difference-device/app/src/main/res/layout-large-land/activity_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../p4-support-difference-device/app/src/main/res/values-th/strings.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../p4-support-difference-device/.idea/.name" afterPath="$PROJECT_DIR$/../p4-support-difference-device/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../p4-support-difference-device/app/src/main/java/com/example/android/supportdifferencedevice/MainActivity.java" afterPath="$PROJECT_DIR$/../p4-support-difference-device/app/src/main/java/com/example/android/supportdifferencedevice/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../p4-support-difference-device/app/app.iml" afterPath="$PROJECT_DIR$/../p4-support-difference-device/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../p4-support-difference-device/.idea/modules.xml" afterPath="$PROJECT_DIR$/../p4-support-difference-device/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../p5-fragment-basics/p5-fragment-basics.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../p5-fragment-basics/.idea/.name" afterPath="$PROJECT_DIR$/../p5-fragment-basics/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../p5-fragment-basics/app/app.iml" afterPath="$PROJECT_DIR$/../p5-fragment-basics/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../p5-fragment-basics/.idea/modules.xml" afterPath="$PROJECT_DIR$/../p5-fragment-basics/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="p3-action-bar-compat.iws" />
@@ -1402,7 +1398,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">

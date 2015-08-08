@@ -1,0 +1,5 @@
+<resources>
+    <!-- TODO: 1 -->
+    <string name="app_name">Master Detail</string>
+    <string name="title_item_detail">Item Detail</string>
+</resources>
