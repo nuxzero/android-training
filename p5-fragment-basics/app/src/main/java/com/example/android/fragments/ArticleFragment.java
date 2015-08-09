@@ -38,12 +38,10 @@ public class ArticleFragment extends Fragment {
             mCurrentPosition = savedInstanceState.getInt(ARG_POSITION);
         }
 
-        View view = inflater.inflate(R.layout.article_view, container, false);
-
-        mArticle = (TextView) view.findViewById(R.id.article);
+        // TODO: Set article object
 
         // Inflate the layout for this fragment
-        return view;
+        return inflater.inflate(R.layout.article_view, container, false);
     }
 
     @Override
