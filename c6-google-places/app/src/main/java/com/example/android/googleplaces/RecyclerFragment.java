@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.example.android.googleplaces.adapters.PlaceAdapter;
 import com.example.android.googleplaces.models.Place;
@@ -42,8 +43,14 @@ public class RecyclerFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
 //        recyclerView.setAdapter(new PlaceAdapter(placeNames));
-        recyclerView.setAdapter(new PlaceAdapter(getActivity(), placeList));
-
+        PlaceAdapter adapter = new PlaceAdapter(getActivity(), placeList);
+        adapter.setOnPlaceItemClickListener(new PlaceAdapter.OnPlaceItemClickListener() {
+            @Override
+            public void onPlaceItemClick(Place place, int position) {
+                Toast.makeText(getActivity(), place.getName(), Toast.LENGTH_SHORT).show();
+            }
+        });
+        recyclerView.setAdapter(adapter);
         return view;
     }
 

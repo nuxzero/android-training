@@ -43,6 +43,7 @@ public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.PlaceViewHol
     private Context context;
     private String[] placeNames;
     private List<Place> placeList;
+    private OnPlaceItemClickListener listener;
 
     public PlaceAdapter(String[] placeNames) {
         this.placeNames = placeNames;
@@ -61,10 +62,10 @@ public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.PlaceViewHol
     }
 
     @Override
-    public void onBindViewHolder(PlaceAdapter.PlaceViewHolder holder, int position) {
+    public void onBindViewHolder(PlaceAdapter.PlaceViewHolder holder, final int position) {
 //        holder.titleText.setText(placeNames[position]);
 
-        Place place = placeList.get(position);
+        final Place place = placeList.get(position);
         holder.titleText.setText(place.getName());
         holder.subtitleText.setText(place.getAddress());
 
@@ -73,6 +74,16 @@ public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.PlaceViewHol
                 .load(place.getImageUrl())
                 .centerCrop()
                 .into(holder.photoImage);
+
+        if (listener != null) {
+            holder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    listener.onPlaceItemClick(place, position);
+                }
+            });
+
+        }
     }
 
     @Override
@@ -84,6 +95,10 @@ public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.PlaceViewHol
             return 0;
         }
         return placeList.size();
+    }
+
+    public void setOnPlaceItemClickListener(OnPlaceItemClickListener listener) {
+        this.listener = listener;
     }
 
 }
